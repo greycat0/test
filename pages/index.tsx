@@ -33,7 +33,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://jsonplaceholder.typicode.com/photos")
+    fetch("https://jsonplaceholder.typicode.com/photos")
       .then((res) => res.json())
       .then((data) => setData(data))
       .then(() => setLoading(false));
